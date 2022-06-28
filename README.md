@@ -26,7 +26,7 @@ Here, we need to import the socket library and then make a simple socket. Follow
 - socket_type − This is either SOCK_STREAM or SOCK_DGRAM.
 - protocol − This is usually left out, defaulting to 0.
 
-#Server Socket Methods
+# Server Socket Methods
 In the client-server architecture, there is one centralized server that provides service and many clients receive service from that centralized server. The clients also do the request to server. A few important server socket methods in this architecture are as follows:
 
 - socket.bind(): This method binds the address (hostname, port number) to the socket.
@@ -35,12 +35,12 @@ In the client-server architecture, there is one centralized server that provides
 
 - socket.accept(): This will accept TCP client connection. The pair (conn, address) is the return value pair of this method. Here, conn is a new socket object used to send and receive data on the connection and address is the address bound to the socket. Before using this method, the socket.bind() and socket.listen() method must be used.
 
-#Client Socket Methods
+# Client Socket Methods
 The client in the client-server architecture requests the server and receives services from the server. For this, there is only one method dedicated for clients:
 
 - socket.connect(address): this method actively intimate server connection or in simple words this method connects the client to the server. The argument address represents the address of the server.
 
-#General Socket Methods
+# General Socket Methods
 Other than client and server socket methods, there are some general socket methods, which are very useful in socket programming. The general socket methods are as follows:
 
 - socket.recv(bufsize): As name implies, this method receives the TCP message from socket. The argument bufsize stands for buffer size and defines the maximum data this method can receive at any one time.
